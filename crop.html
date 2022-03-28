@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="/safari_mask_icon.svg?kjhdkajhd" rel="mask-icon" color="#b11116" />
+
+
+
+</head>
+<body>
+
+    <div id="_id_crop_area">
+        <div class="image_place">
+            <img src="./img/upload_2_test.jpg" alt="">
+
+            <!-- <img src="./img/upload_2_test.jpg" alt=""> -->
+        </div>
+    </div>
+
+    <script src="./js/crop_backup.js"></script>
+
+    <script>
+        _id_crop_area.querySelectorAll('img').forEach((el,i) => {
+            if(i>0){
+                cropIt(el,'1:1');
+            } else {
+                cropIt(el,'3:5');
+            }
+
+        });
+    </script>
+
+</body>
+</html>

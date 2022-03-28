@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="icon" href="/test_svg_favi.svg" type="image/svg+xml">
+    <!-- <link href="/safari_mask_icon.svg?kjhdkajhd" rel="mask-icon" color="#b11116" /> -->
+
+</head>
+<body>
+
+
+
+    <div id="drup_area">
+        <div class="hint s_file_input_btn">drop file here or choose</div>
+
+        <input type="file" id="_id_file_input" accept="image/*" multiple>
+    </div>
+
+
+
+
+    <div id="result_area" class="b_result_area ">
+        <!-- <div class="b_result_area-item">
+            <div class="b_result_area-item-image">
+                <img src="./img/upload_1_test.jpg" alt="">
+            </div>
+            <div class="b_result_area-item-info">
+                <p>name: very_long_file_name_like_screenshot122112.png
+                <p>size: 1240x1500 123kB
+                <p>type: ${image.type}
+            </div>
+            <div class="b_result_area-item-control">
+                <div class="b_croparea">
+                    <div class="b_croparea-item m_3_2">
+                        <div class="b_croparea-item-image">
+                            <div class="ratio">3:2 ratio</div>
+                            <img src="./img/upload_1_test.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="b_croparea-title">
+                        Cropping:
+                    </div>
+                    <div class="b_croparea-item m_sq">
+                        <div class="b_croparea-item-image">
+                            <div class="ratio">square</div>
+                            <img src="./img/upload_1_test.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+
+    <div id="gobtn" class="gobtn">Go</div>
+
+
+    <div id="test_result">
+
+    </div>
+
+
+    <template id="_id_croparea_tmpl">
+        <div class="b_croparea">
+            <div class="b_croparea-item m_3_2">
+                <div class="ratio"><span>3:2</span></div>
+                <img data-ratio="3:2">
+            </div>
+            <div class="b_croparea-title">
+                Cropping:
+            </div>
+            <div class="b_croparea-item m_sq">
+                <div class="ratio"><span>1:1</span></div>
+                <img data-ratio="1:1">
+            </div>
+        </div>
+    </template>
+
+    <template id="_id_result_image_row_tmpl">
+        <div class="b_result_area-item">
+            <div class="b_result_area-item-image">
+
+            </div>
+            <div class="b_result_area-item-info">
+
+            </div>
+            <div class="b_result_area-item-control"></div>
+        </div>
+    </template>
+
+    <script src="./js/upload.js" type="module"></script>
+
+</body>
+</html>

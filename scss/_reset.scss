@@ -1,0 +1,32 @@
+html * {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    font-size: inherit;
+    line-height: inherit;
+    box-sizing: border-box;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+    box-shadow: none;
+
+}
+
+html {
+    font-size: 10px; // anchor for rem
+}
+
+html body {
+    font-size: 0;
+    line-height: 0;
+
+    a {
+        text-decoration: none;
+    }
+
+}
